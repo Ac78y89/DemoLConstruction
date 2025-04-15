@@ -1,0 +1,51 @@
+/* About Us Section */
+.about {
+  background-color: var(--white);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-container img {
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.about-container img:hover {
+  transform: scale(1.02);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+@media (max-width: 992px) {
+  .about-container {
+      flex-direction: column;
+  }
+  
+  .about-container img {
+      width: 100%;
+      max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text p {
+      font-size: 1rem;
+  }
+}

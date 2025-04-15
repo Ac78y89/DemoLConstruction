@@ -1,0 +1,140 @@
+/* Footer Styles */
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+  padding: 60px 0 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.footer-about p {
+  margin-bottom: 20px;
+  color: #bbb;
+  line-height: 1.7;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.footer-links h3,
+.footer-services h3,
+.footer-contact h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.footer-links ul,
+.footer-services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links li a,
+.footer-services li a {
+  color: #bbb;
+  transition: var(--transition);
+}
+
+.footer-links li a:hover,
+.footer-services li a:hover {
+  color: var(--secondary-color);
+  padding-left: 5px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #bbb;
+}
+
+.footer-contact i {
+  color: var(--secondary-color);
+  width: 20px;
+  text-align: center;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.licenses-options {
+  font-size: 0.8rem;
+}
+
+.licenses-options a {
+  color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.licenses-options a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-services,
+  .footer-contact {
+      text-align: center;
+  }
+  
+  .social-links {
+      justify-content: center;
+  }
+  
+  .footer-links ul,
+  .footer-services ul {
+      align-items: center;
+  }
+}
